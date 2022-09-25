@@ -15,5 +15,7 @@ Microsoft ещё в 2008 выпустила бюллетень безопасн�
 ---------------
 
 CrackMapExec: [command reference](https://github.com/Porchetta-Industries/CrackMapExec/wiki/SMB-Command-Reference)
+
 Nmap: [nmap cheat sheet](https://www.stationx.net/nmap-cheat-sheet/)
+
 Metasploit: [smb relay](https://subscription.packtpub.com/book/security/9781788623179/11/ch11lvl1sec132/smb-relay-attacks)
