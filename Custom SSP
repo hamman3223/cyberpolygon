@@ -1,0 +1,6 @@
+SSP- security support provider. В общем смысле, это протоколы аутентификации, хранящиеся в DLL. Стандартные SSP для windows - Kerberos, NTLM, Digest и т.д.
+Но также можно создать и свой SSP для перехвата чужих данных
+Наверное, характерно для этой атаки - появление нового dll файла в директории C:\Windows\System32\ ( при использовании  mimikatz это будет mimilib.dll)
+Затем получаем список существующих пакетов безопасности LSA (reg query hklm\system\currentcontrolset\control\lsa\ /v "Security Packages")
+Добавляем в этот список dll файл ( reg add "hklm\system\currentcontrolset\control\lsa\" /v "Security Packages")
+После ребута системы все данные можно найти в C:\Windows\System32\kiwissp.log
