@@ -1,4 +1,5 @@
 В журналах винды Event ID 4794 (An attempt was made to set the Directory Services Restore Mode administrator password)
-Атакующий будет пытаться сменить пароль DSRM учетки с помощью команды ntdsutil. Смена пароля позволит в дальнейшем логиниться на контроллерах домена в качестве локального админа
+Атакующий будет пытаться сменить пароль DSRM учетки с помощью команды ntdsutil. 
+Смена пароля позволит в дальнейшем логиниться на контроллерах домена в качестве локального админа
 Enable a rule based on Event ID 4657 ( A registry value was modified ) – Audit creation/change of HKLM:\System\CurrentControlSet\Control\Lsa DsrmAdminLogonBehavior.
 Короче, если это событие произойдет, то оно наверняка будет замечено
